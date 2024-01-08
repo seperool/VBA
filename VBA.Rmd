@@ -12,12 +12,12 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  pdf_document:
-    number_sections: yes
-    toc: no
   word_document:
     toc: yes
     number_sections: yes
+  pdf_document:
+    number_sections: yes
+    toc: no
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -65,7 +65,52 @@ library(janitor)
 
 # OBJETIVO
 
-Estudo dirigido Macro e VBA Excel.\
+Estudo dirigido Macro e **VBA** Excel.\
 
 \pagenumbering{arabic}
 \newpage
+
+# MACROS
+
+## Diferenças entre Macros e **VBA**\
+- Macros:\
+  - Script para automatização de tarefas.\
+  - Gravar sequências de ações e transformar em um script ou comandos (macros).\
+  - Não necessita de conhecimento de programação.\
+- **VBA** (*Visual Basic for Application*):\
+  - Linguagem de programação de script do Excel.\
+
+## Habilitar opção desenvolvedor
+
+Excel > Arquivo > Opções > Personalizar faixa de opções > (marcar opção) Desenvolvedor\
+
+
+![Habilitar opção de Desenvolvedor.](Imagens\Macros\Habilitar_Desenvolvedor.png){}
+
+
+\newpage
+
+## Gravar macro
+
+- Três opções para abrir uma gravação de uma Macro:\
+1. Primeira opção:\
+Na aba Desenvolvedor, opção "Gravar macro".\
+
+![Primeira opção para gravar macro.](Imagens\Macros\Gravar_macro_1.png){}
+
+
+2. Segunda opção:\
+Na aba Exibir, dentro da opção "Macros", tem a opção "Gravar macro".\
+
+![Segunda opção para gravar macro.](Imagens\Macros\Gravar_macro_2.png){}
+
+
+3. Terceira opção:\
+No rodapé esquerdo tem um icone para gravar macro.\
+
+![Terceira opção para gravar macro.](Imagens\Macros\Gravar_macro_3.png){}
+
+
+\newpage
+
+- Criando uma Macro:\
