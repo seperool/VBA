@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  odt_document:
-    number_sections: yes
-  html_document:
-    toc: yes
-    df_print: paged
-  word_document:
-    toc: yes
-    number_sections: yes
   pdf_document:
     number_sections: yes
     toc: no
+  html_document:
+    toc: yes
+    df_print: paged
+  odt_document:
+    number_sections: yes
+  word_document:
+    toc: yes
+    number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -113,4 +113,30 @@ No rodapé esquerdo tem um icone para gravar macro.\
 
 \newpage
 
-- Criando uma Macro:\
+- Tela inicial de gravação de Macro:\
+  - *Nome da macro*:\
+    - Inserir o nome da Macro.\
+    - Não aceita espaço, logo, ou colar o nome da macro tudo junto ("PrimeiraMacro"), ou usar o underline ("Primeira_Macro").\
+  - *Tecla de atalho*:\
+    - Podemos colocar um atalho para chamar a Macro.\
+    - Caso o atalho já esteja em uso, o Excel sugere outro atalho, mas não deixa sobreescrever.\
+  - *Armazenar macro em*:\
+    - *Esta pasta de trabalho*\
+    A Macro funcionará apenas para este arquivo.\
+    - *Nova pasta de trabalho*\
+    Cria a Macro em outra pastas.\
+    - *Pasta de trabalho pessoal de macros*\
+    É criado uma macro global que serve para todos as planilhas.\
+  - *Descrição*:\
+  Podemos inserir um texto que descreve o que a macro faz.\
+
+![Tela inicial de gravação de macros.](Imagens\Macros\Gravar_macro_tela.png){}
+
+
+- Gravando Macro:\
+- Encerrando gravação de uma Macro:\
+- Acessando Macro:\
+
+\newpage
+
+## Noção básica do script das Macros
