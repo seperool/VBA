@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  odt_document:
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
-    number_sections: yes
   word_document:
     toc: yes
     number_sections: yes
+  pdf_document:
+    number_sections: yes
+    toc: no
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -90,7 +90,7 @@ Excel > Arquivo > Opções > Personalizar faixa de opções > (marcar opção) D
 
 \newpage
 
-## Gravar macro
+## Gravar Macro
 
 - Três opções para abrir uma gravação de uma Macro:\
 1. Primeira opção:\
@@ -133,9 +133,49 @@ No rodapé esquerdo tem um icone para gravar macro.\
 ![Tela inicial de gravação de macros.](Imagens\Macros\Gravar_macro_tela.png){}
 
 
+\newpage
+
 - Gravando Macro:\
+  - Ao iniciar uma gravação de uma macro, o programa não pega a movimentação do mouse e nem o tempo.\
+  - O programa pega apenas as tarefas aplicadas.\
 - Encerrando gravação de uma Macro:\
-- Acessando Macro:\
+
+\newpage
+
+## Acessando Macros
+- Para acessar as Macros criadas basta ir na aba "Desenvolvedor", ou na aba "Exibir", na opção "Macros".\
+  
+![Acessando a tela de Macros, opção 1 (aba "Desenvolvedor" > opção "Macros").](Imagens\Macros\Acessando_Macros_1.png){}
+
+
+![Acessando a tela de Macros, opção 2 (aba "Exibir" > opção "Macros").](Imagens\Macros\Acessando_Macros_2.png){}
+
+
+\newpage
+
+- Para acessar o script gerado pela Macro e poder edita-lo, na tela de "*Macros*", selecionamos a Macro desejada e procuramos a opção "*Editar*". Assim somos enviados para tela do "*Visual Basic*".\
+  
+![Tela de Macros, opção *Editar*.](Imagens\Macros\Editar_Macro.png){width=60%}
+
+  
+![Tela de Visual Basic, para editar Macro.](Imagens\Macros\Tela_Visual_Basic.png){width=60%}
+
+  
+\newpage
+
+## Salvando Arquivo com Macro
+
+- O Excel por default não salva as Macros criadas em um arquivo Excel.\
+- Quando o arquivo é salvo e fechado as Macros são apagadas.\
+- Para salvar um arquivo com Macros é necessario:
+  - ir em "*salvar como*".\
+  - Definir o local de salvamento.\
+  - Definir um nome para o arquivo.\
+  - No tipo de arquivo, selecionar a opção:\
+  "*Pasta de Trabalho Habilitada para Macro do Excel (\*.xlsm)*"\
+
+![Salvando arquivo Excel com Macros.](Imagens\Macros\Salvando_macro.png){}
+
 
 \newpage
 
