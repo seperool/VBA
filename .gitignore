@@ -2,3 +2,5 @@
 *.html
 *.aux
 *.out
+*.lo*
+*.toc
