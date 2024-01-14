@@ -12,12 +12,12 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  word_document:
-    toc: yes
-    number_sections: yes
   pdf_document:
     number_sections: yes
     toc: no
+  word_document:
+    toc: yes
+    number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -139,6 +139,7 @@ No rodapé esquerdo tem um icone para gravar macro.\
   - Ao iniciar uma gravação de uma macro, o programa não pega a movimentação do mouse e nem o tempo.\
   - O programa pega apenas as tarefas aplicadas.\
 - Encerrando gravação de uma Macro:\
+- Executando a Macro:\
 
 \newpage
 
