@@ -1,6 +1,6 @@
-ESCRITO EM 12/01/24
+ESCRITO EM 13/01/24
 ---
-PARA 13/01/24
+PARA 14/01/24
 ---
 Subir github:
 
@@ -8,6 +8,7 @@ Estudar:
 
 Afazeres:
 	- Seção 2:
-		- Grando Macro (Minha primeira macro - parte 2 e 3)
+		- Grando Macro (Minha primeira macro - parte 3)
 			- Encerrando gravação de uma Macro
+			- Executando a Macro
 			- Noção básica do script das Macros
