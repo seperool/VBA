@@ -10,3 +10,4 @@ Afazeres:
 	- Seção 2:
 		- Grando Macro (Minha primeira macro - parte 3)
 			- Noção básica do script das Macros
+			- Referência Absoluta e Relativa 
