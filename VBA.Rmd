@@ -7,16 +7,16 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  odt_document:
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: no
   word_document:
     toc: yes
-    number_sections: yes
-  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -195,11 +195,42 @@ No rodapé esquerdo tem um icone para gravar macro.\
 
 ## Noção básica do script das Macros
 
-- Comentários\
-- Seleção\
-- Formatação básica\
-- Zoom\
-- Função\
+- Adicionar comentários:\
+  - Para adionar comentários ao script usamos uma aspas simples, tudo que vier depois na linha é um comentário.\
+  - Como boas práticas normalmente adicionamos:\
+    - O nome da função (Macro). (Automático)\
+    - Atalho no teclado para executar a Macro. (Automático)\
+    - Data de criação.\
+    - Quem criou a Macro e o seu contato.\
+    - Breve descrição da Macro.\
+
+- Seleção:\
+  - Selecionar célula:\
+  `Range("A1").Select`\
+  - Selecionar coluna:\
+  `Columns("A:A").Select`\
+  - Selecionar linhas:\
+  `Rows("1:3").Select`\
+
+- Formatação básica:\
+  - Itálico\
+  `Selection.Font.Italic = True | False`\
+  - Negrito\
+  `Selection.Font.Bold = True | False`\
+  - Alinhamentos:\
+    - Horzontal\
+    `HorizontalAlignment = xlRight | xlCenter | xlLeft`\
+    - Vertical\
+    `VerticalAlignment = xlTop | xlCenter | xlBottom`\
+  - Tamanho da coluna/linha (Automático)\
+  `Columns("A:A").EntireColumn.AutoFit`\
+  `Rows("1:1").EntireColumn.AutoFit`\
+
+- Zoom:\
+Determina o valor do zoom da janela do Excel.\
+`ActiveWindow.Zoom = 100`\
+
+- Função (Macro):\
 
 \newpage
 
