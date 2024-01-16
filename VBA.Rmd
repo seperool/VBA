@@ -7,16 +7,16 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  odt_document:
-    number_sections: yes
-  html_document:
-    toc: yes
-    df_print: paged
   pdf_document:
     number_sections: yes
     toc: no
+  html_document:
+    toc: yes
+    df_print: paged
   word_document:
     toc: yes
+    number_sections: yes
+  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -194,3 +194,13 @@ No rodapé esquerdo tem um icone para gravar macro.\
 \newpage
 
 ## Noção básica do script das Macros
+
+- Comentários\
+- Seleção\
+- Formatação básica\
+- Zoom\
+- Função\
+
+\newpage
+
+## Referência Relativa
