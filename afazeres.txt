@@ -1,6 +1,6 @@
-ESCRITO EM 14/01/24
+ESCRITO EM 15/01/24
 ---
-PARA 15/01/24
+PARA 16/01/24
 ---
 Subir github:
 
@@ -10,4 +10,9 @@ Afazeres:
 	- Seção 2:
 		- Grando Macro (Minha primeira macro - parte 3)
 			- Noção básica do script das Macros
+				- Comentários
+				- Seleção
+				- Formatação básica
+				- Zoom
+				- Função
 			- Referência Absoluta e Relativa 
