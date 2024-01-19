@@ -13,10 +13,10 @@ output:
   html_document:
     toc: yes
     df_print: paged
+  odt_document:
+    number_sections: yes
   word_document:
     toc: yes
-    number_sections: yes
-  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -239,6 +239,33 @@ Determina o valor do zoom da janela do Excel.\
   `Rows("1:1").EntireColumn.AutoFit`\
 
 - Função (Macro):\
+  - VBA é uma linguagem identada.\
+  - A função Macro no VBA do Excel é uma função `Sub()`.\
+  - Como o nome da Macro é o nome que encontramos na função `Sub()`, podemos mudar o nome da Macro alterando o nome na função `Sub()`.\
+  Exemplo:\
+  Mudando nome da Macro,\
+  `Sub MinhaPrimeiraMacro()`\
+  para,\
+  `Sub Minha_Primeira_Macro()`\
+  - Sintaxe:\
+  ```
+  Sub nome_da_macro(argumento_s_1, argumento_s_2, ...)
+    Bloco de programação
+  End Sub
+  ```
+
+\newpage
+
+## Simplificando Macros
+
+- Podemos simplificar Macros ao abrir o script e cortar, ou juntar, trechos que são desnecessarios ou redundantes. Deixando a Macro mais objetiva.\
+- Exemplo de script simplificado:\
+
+![Script original da Macro.](Imagens\Macros\Script_nao_simplificado.png){width=80%}
+
+
+![Script simplificado da Macro.](Imagens\Macros\Script_simplificado.png){width=80%}
+
 
 \newpage
 
