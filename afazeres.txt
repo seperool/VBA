@@ -1,11 +1,16 @@
-ESCRITO EM 18/01/24
+ESCRITO EM 20/01/24
 ---
-PARA 19/01/24
+PARA 21/01/24
 ---
 Subir github:
 
 Estudar:
-
+- Minha Primeira Macro
+	- Parte 3
+- Referência Relativa
+	- Parte 1
+	- Parte 2
+	- Parte 3
 Afazeres:
 	- Seção 2:
 		- Grando Macro (Minha primeira macro - parte 3)
