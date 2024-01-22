@@ -230,6 +230,12 @@ Determina o valor do zoom da janela do Excel.\
   - Negrito\
   `Selection.Font.Bold = True | False`\
   - Alinhamentos:\
+  Dentro das células selecionadas pelo comando `with`:\
+  ```
+  With Selection
+    Bloco de programação
+  End With
+  ```
     - Horzontal\
     `HorizontalAlignment = xlRight | xlCenter | xlLeft`\
     - Vertical\
@@ -258,7 +264,7 @@ Determina o valor do zoom da janela do Excel.\
 
 ## Simplificando Macros
 
-- Podemos simplificar Macros ao abrir o script e cortar, ou juntar, trechos que são desnecessarios ou redundantes. Deixando a Macro mais objetiva.\
+- Podemos simplificar Macros ao abrir o script e cortar, ou juntar, trechos que são desnecessarios, ou redundantes. Deixando a Macro mais objetiva.\
 - Exemplo de script simplificado:\
 
 ![Script original da Macro.](Imagens\Macros\Script_nao_simplificado.png){width=80%}
@@ -266,6 +272,23 @@ Determina o valor do zoom da janela do Excel.\
 
 ![Script simplificado da Macro.](Imagens\Macros\Script_simplificado.png){width=80%}
 
+
+\newpage
+- Juntar seleção de célula e inserção de fórmula:\
+
+- Eliminando comandos desnecessários da formatação básica:\
+
+- Zoom simplificado:\
+  Ao invés de passar de valor de zoom por valor de zoom.\
+  ```
+  ActiveWindow.Zoom = 110
+  ActiveWindow.Zoom = 120
+  ActiveWindow.Zoom = 130
+  ActiveWindow.Zoom = 140
+  ActiveWindow.Zoom = 150
+  ```
+  Podemos ir direto no valor de zoom desejado, eliminando assim as transições.\
+  `ActiveWindow.Zoom = 150`\
 
 \newpage
 
