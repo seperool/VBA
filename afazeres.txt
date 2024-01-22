@@ -1,6 +1,6 @@
-ESCRITO EM 20/01/24
+ESCRITO EM 21/01/24
 ---
-PARA 21/01/24
+PARA 22/01/24
 ---
 Subir github:
 
@@ -15,4 +15,6 @@ Afazeres:
 	- Seção 2:
 		- Grando Macro (Minha primeira macro - parte 3)
 			- Simplificando Macro
+				- Juntar seleção de célula e inserção de fórmula
+				- Eliminando comandos desnecessários da formatação básica
 			- Referência Absoluta e Relativa 
