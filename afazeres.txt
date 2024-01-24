@@ -1,6 +1,6 @@
-ESCRITO EM 22/01/24
+ESCRITO EM 23/01/24
 ---
-PARA 23/01/24
+PARA 24/01/24
 ---
 Subir github:
 
@@ -13,8 +13,5 @@ Estudar:
 	- Parte 3
 Afazeres:
 	- Seção 2:
-		- Grando Macro (Minha primeira macro - parte 3)
-			- Simplificando Macro
-				- Juntar seleção de célula e inserção de fórmula
-				- Eliminando comandos desnecessários da formatação básica
-			- Referência Absoluta e Relativa 
+		- Gerando Macro (Referência Relativa - parte 1, 2 e 3)
+			- Referência Absoluta e Relativa
