@@ -264,6 +264,8 @@ Determina o valor do zoom da janela do Excel.\
 
 ## Simplificando Macros
 
+### Teoria de simplificação de Macros
+
 - Podemos simplificar Macros ao abrir o script e cortar, ou juntar, trechos que são desnecessarios, ou redundantes. Deixando a Macro mais objetiva.\
 - Exemplo de script simplificado:\
 
@@ -274,9 +276,54 @@ Determina o valor do zoom da janela do Excel.\
 
 
 \newpage
+
+### Técnicas para simplificar Macros
+
 - Juntar seleção de célula e inserção de fórmula:\
+  Ao inves de selecionar uma célula e inserir fórmala separadamente.\
+  ```
+  Range("A1").Select
+  ActiveCell.FormulaR1C1 = "Sergio Pedro Rodrigues Oliveira"
+  ```
+  Podemos fazer as duas coisas de uma só vez.\
+  `Range("A1").FormulaR1C1 = "Sergio Pedro Rodrigues Oliveira"`
 
 - Eliminando comandos desnecessários da formatação básica:\
+  Existem determinados comandos que são gerados automaticamente quando desejamos fazer formatação do alinhamento do texto numa célula, dentro do comando `with selection`, nem todos esses comandos são necessarios.\
+  ```
+  With Selection
+    .HorizontalAlignment = xlGeneral
+    .VerticalAlignment = xlCenter
+    .WrapText = False
+    .Orientation = 0
+    .AddIndent = False
+    .IndentLevel = 0
+    .ShrinkToFit = False
+    .ReadingOrder = xlContext
+    .MergeCells = False
+  End With
+  With Selection
+    .HorizontalAlignment = xlCenter
+    .VerticalAlignment = xlCenter
+    .WrapText = False
+    .Orientation = 0
+    .AddIndent = False
+    .IndentLevel = 0
+    .ShrinkToFit = False
+    .ReadingOrder = xlContext
+    .MergeCells = False
+  End With
+  ```
+  Logo, podemos omiti-los para simplificar o script.\
+  Também podemos juntar os comandos de formatação de alinhamento da mesma célula dentro de um mesmo comando `with selection`.\
+  ```
+  With Selection
+    .HorizontalAlignment = xlCenter
+    .VerticalAlignment = xlBottom
+  End With
+  ```
+
+\newpage
 
 - Zoom simplificado:\
   Ao invés de passar de valor de zoom por valor de zoom.\
