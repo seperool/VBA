@@ -1,17 +1,14 @@
-ESCRITO EM 23/01/24
+ESCRITO EM 25/01/24
 ---
-PARA 24/01/24
+PARA 26/01/24
 ---
 Subir github:
 
 Estudar:
-- Minha Primeira Macro
-	- Parte 3
-- Referência Relativa
-	- Parte 1
-	- Parte 2
-	- Parte 3
+	- Referência Relativa
+		- Parte 2
+		- Parte 3
 Afazeres:
 	- Seção 2:
-		- Gerando Macro (Referência Relativa - parte 1, 2 e 3)
+		- Gerando Macro (Referência Relativa - parte 2 e 3)
 			- Referência Absoluta e Relativa
