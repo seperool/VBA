@@ -13,10 +13,10 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
-    number_sections: yes
   word_document:
     toc: yes
+    number_sections: yes
+  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -233,13 +233,13 @@ Determina o valor do zoom da janela do Excel.\
   Dentro das células selecionadas pelo comando `with`:\
   ```
   With Selection
-    Bloco de programação
+    .Bloco de programação
   End With
   ```
     - Horzontal\
-    `HorizontalAlignment = xlRight | xlCenter | xlLeft`\
+    `.HorizontalAlignment = xlRight | xlCenter | xlLeft`\
     - Vertical\
-    `VerticalAlignment = xlTop | xlCenter | xlBottom`\
+    `.VerticalAlignment = xlTop | xlCenter | xlBottom`\
   - Auto-ajuste coluna/linha (Automático)\
   `Columns("A:A").EntireColumn.AutoFit`\
   `Rows("1:1").EntireColumn.AutoFit`\
@@ -339,4 +339,18 @@ Determina o valor do zoom da janela do Excel.\
 
 \newpage
 
-## Referência Relativa
+## Referência Relativa (ou Macro Relativa)
+
+### Referência Relativa
+
+- Quando ativado a opção "Usar referência relativa", na aba "Desenvolvedor", aplica a Macro onde o cursor esta ativo, ou usa o curso como referência.\
+- Ex.: Se você gravar na célula A1 uma Macro que move o cursor para A3, com a opção "Usar referência relativa" ativada, a execução da Macro resultante na célula J6 moverá o cursor para J8.\
+
+### Referência Absoluta
+
+- A forma tradicional com a opção "Usar referência relativa" desativada, é chamado de referência absoluta, onde a Macro apenas repete os comandos nas células|colunas|linhas selecionadas previamente estabelecidas.\
+- Ex.: Se você gravar na célula A1 uma Macro que move o cursor para A3, com a opção "Usar referência relativa" desativada, a execução da Macro resultante na célula J6 moverá o cursor para A3.\
+
+### Usando referências relativa e absoluta
+
+- Podemos usar as duas opções de referência durante a gravação de uma Macro, basta ativar e desativar a opção "Usar referência relativa" durante o processo de gravação.\
