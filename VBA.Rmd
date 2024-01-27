@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
-    number_sections: yes
-    toc: no
-  html_document:
-    toc: yes
-    df_print: paged
   word_document:
     toc: yes
     number_sections: yes
+  html_document:
+    toc: yes
+    df_print: paged
   odt_document:
     number_sections: yes
+  pdf_document:
+    number_sections: yes
+    toc: no
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -354,3 +354,6 @@ Determina o valor do zoom da janela do Excel.\
 ### Usando referências relativa e absoluta
 
 - Podemos usar as duas opções de referência durante a gravação de uma Macro, basta ativar e desativar a opção "Usar referência relativa" durante o processo de gravação.\
+
+
+![Opção de "Usar Referências Relativas".](Imagens\Macros\Referencia_relativa.png){width=80%}
