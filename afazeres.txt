@@ -1,14 +1,12 @@
-ESCRITO EM 26/01/24
+ESCRITO EM 30/01/24
 ---
-PARA 27/01/24
+PARA 31/01/24
 ---
 Subir github:
 
 Estudar:
-	- Referência Relativa
-		- Parte 2
-		- Parte 3
+
 Afazeres:
 	- Seção 2:
-		- Gerando Macro (Referência Relativa - parte 2 e 3)
+		- Gerando Macro (Referência Relativa - parte 2, 3 e 4)
 			- Referência Absoluta e Relativa
