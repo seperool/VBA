@@ -1,6 +1,6 @@
-ESCRITO EM 30/01/24
+ESCRITO EM 31/01/24
 ---
-PARA 31/01/24
+PARA 01/02/24
 ---
 Subir github:
 
@@ -10,3 +10,4 @@ Afazeres:
 	- Seção 2:
 		- Gerando Macro (Referência Relativa - parte 2, 3 e 4)
 			- Referência Absoluta e Relativa
+			- Simplificando VBA referência relativa e absoluta
