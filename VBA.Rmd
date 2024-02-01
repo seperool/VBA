@@ -7,13 +7,13 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  word_document:
-    toc: yes
+  odt_document:
     number_sections: yes
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
+  word_document:
+    toc: yes
     number_sections: yes
   pdf_document:
     number_sections: yes
@@ -357,3 +357,7 @@ Determina o valor do zoom da janela do Excel.\
 
 
 ![Opção de "Usar Referências Relativas".](Imagens\Macros\Referencia_relativa.png){width=80%}
+
+
+### Simplificando VBA de referência relativa e absoluta
+
