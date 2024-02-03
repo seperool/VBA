@@ -1,6 +1,6 @@
-ESCRITO EM 31/01/24
+ESCRITO EM 02/02/24
 ---
-PARA 01/02/24
+PARA 03/02/24
 ---
 Subir github:
 
@@ -11,3 +11,11 @@ Afazeres:
 		- Gerando Macro (Referência Relativa - parte 2, 3 e 4)
 			- Referência Absoluta e Relativa
 			- Simplificando VBA referência relativa e absoluta
+				- Comandos
+					- Seleção
+					- Deletar linha | coluna
+					- Mover linhas | colunas após deletar uma determinada linha | coluna
+				- Comando simplificados
+					- Seleção
+					- Deletar linha | coluna
+					- Mover linhas | colunas após deletar uma determinada linha | coluna
