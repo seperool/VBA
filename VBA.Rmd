@@ -12,12 +12,12 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  word_document:
-    toc: yes
-    number_sections: yes
   pdf_document:
     number_sections: yes
     toc: no
+  word_document:
+    toc: yes
+    number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -359,5 +359,64 @@ Determina o valor do zoom da janela do Excel.\
 ![Opção de "Usar Referências Relativas".](Imagens\Macros\Referencia_relativa.png){width=80%}
 
 
+\newpage
+
 ### Simplificando VBA de referência relativa e absoluta
 
+- Ao criar uma Macro usando referência relativa ou absoluta o código tem as seguintes caracteristicas:\
+  - Referência Relativa:\
+    - Selecionar linha:\
+    - Selecionar coluna:\
+    - Deletar seleção:\
+    - Mover linhas|colunas após apagar uma linha|coluna:\
+  - Referência Absoluta:\
+    - Selecionar linha:\
+    - Selecionar coluna:\
+    - Deletar seleção:\
+    - Mover linhas|colunas após apagar uma linha|coluna:\
+
+\newpage
+
+- Podemos simplificar o código:\
+  - Referência Relativa:\
+    - Simplificando seleção de linha:\
+    - Simplificando seleção de coluna:\
+    - Deletando determinada seleção de linha|coluna:\
+    - Mover linhas|colunas após apagar uma linha|coluna:\
+  - Referência Absoluta:\
+    - Simplificando seleção de linha:\
+    - Simplificando seleção de coluna:\
+    - Deletando determinada seleção de linha|coluna:\
+    - Mover linhas|colunas após apagar uma linha|coluna:\
+
+\newpage
+
+- Exemplo de Simplificação de código.\
+
+Código Original:\
+```
+Sub ApagarLinhaRelativamente()
+'
+' ApagarLinhaRelativamente Macro
+'
+'
+'
+    ActiveCell.Rows("1:1").EntireRow.Select
+    Selection.Delete Shift:=xlUp
+    Rows("10:10").Select
+    Selection.Delete Shift:=xlUp
+End Sub
+```
+
+Código Simplificado:\
+```
+Sub Apagar_Linha_Relatimente()
+'
+' Apagar_Linha_Relatimente Macro
+' Macro Simplificada
+'
+'
+    ActiveCell.EntireRow.Delete
+    Rows("10:10").Delete
+End Sub
+```
