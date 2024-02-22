@@ -1,6 +1,6 @@
-ESCRITO EM 02/02/24
+ESCRITO EM 022/02/24
 ---
-PARA 03/02/24
+PARA 23/02/24
 ---
 Subir github:
 
@@ -8,14 +8,4 @@ Estudar:
 
 Afazeres:
 	- Seção 2:
-		- Gerando Macro (Referência Relativa - parte 2, 3 e 4)
-			- Referência Absoluta e Relativa
-			- Simplificando VBA referência relativa e absoluta
-				- Comandos
-					- Seleção
-					- Deletar linha | coluna
-					- Mover linhas | colunas após deletar uma determinada linha | coluna
-				- Comando simplificados
-					- Seleção
-					- Deletar linha | coluna
-					- Mover linhas | colunas após deletar uma determinada linha | coluna
+		- Meu primeiro programa em VBA (1, 2, 3 e 4)
