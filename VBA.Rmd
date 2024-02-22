@@ -7,16 +7,16 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  odt_document:
-    number_sections: yes
-  html_document:
-    toc: yes
-    df_print: paged
   pdf_document:
     number_sections: yes
     toc: no
+  html_document:
+    toc: yes
+    df_print: paged
   word_document:
     toc: yes
+    number_sections: yes
+  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -365,29 +365,81 @@ Determina o valor do zoom da janela do Excel.\
 
 - Ao criar uma Macro usando referência relativa ou absoluta o código tem as seguintes caracteristicas:\
   - Referência Relativa:\
-    - Selecionar linha:\
-    - Selecionar coluna:\
+    - Selecionar linha de referencia (linha inteira):\
+    `ActiveCell.Rows("1:1").EntireRow.Select`\
+    - Selecionar coluna de referencia (coluna inteira):\
+    `ActiveCell.Columns("A:A").EntireColumn.Select`\
     - Deletar seleção:\
+    `Selection.Delete`\
     - Mover linhas|colunas após apagar uma linha|coluna:\
+      - Linha:\
+      `Selection.Delete Shift:=xlUp`\
+      - Coluna:\
+      `Selection.Delete Shift:=xlToLeft`\
   - Referência Absoluta:\
     - Selecionar linha:\
+    `Rows("1:1").Select`\
     - Selecionar coluna:\
+    `Columns("A:A").Select`\
     - Deletar seleção:\
+    `Selection.Delete`\
     - Mover linhas|colunas após apagar uma linha|coluna:\
+      - Linha:\
+      `Selection.Delete Shift:=xlUp`\
+      - Coluna:\
+      `Selection.Delete Shift:=xlToLeft`\
 
 \newpage
 
 - Podemos simplificar o código:\
   - Referência Relativa:\
-    - Simplificando seleção de linha:\
-    - Simplificando seleção de coluna:\
+    - Simplificando seleção de linha de referência:\
+      - Gerado automaticamente:\
+      `ActiveCell.Rows("1:1").EntireRow.Select`\
+      - Simplificando:\
+      `ActiveCell.EntireRow.Select`\
+    - Simplificando seleção de coluna de referência:\
+      - Gerado automaticamente:\
+      `ActiveCell.Columns("A:A").EntireRow.Select`\
+      - Simplificando:\
+      `ActiveCell.EntireColumn.Select`\
     - Deletando determinada seleção de linha|coluna:\
+      - Linha, programação gerada automaticamente:\
+      ```
+      ActiveCell.Rows("1:1").EntireRow.Select
+      Selection.Delete Shift:=xlUp
+      ```
+      - Linha simplificando:\
+      `ActiveCell.EntireRow.Delete`\
+      - Coluna, programação gerada automaticamente:\
+      ```
+      ActiveCell.Columns("A:A").EntireColumn.Select
+      Selection.Delete Shift:=xlToLeft
+      ```
+      - Coluna simplificando:\
+      `ActiveCell.EntireColumn.Delete`\
     - Mover linhas|colunas após apagar uma linha|coluna:\
+    Não é preciso colocar nada, o programa faz automaticamente.\
+    Podemos simplismente omitir:`Shift:=xlUp` | `Shift:=xlToLeft`\
   - Referência Absoluta:\
-    - Simplificando seleção de linha:\
-    - Simplificando seleção de coluna:\
     - Deletando determinada seleção de linha|coluna:\
+      - Linha gerada automaticamente:\
+      ```
+      Rows("1:1").Select
+      Selection.Delete Shift:=xlUp
+      ```
+      - Linha Simplificado:\
+      `Rows("1:1").Delete`\
+      - Coluna gerada automaticamente:\
+      ```
+      Columns("A:A").Select
+      Selection.Delete Shift:=xlToLeft
+      ```
+      - Coluna simplificado:\
+      `Columns("A:A").Delete`\
     - Mover linhas|colunas após apagar uma linha|coluna:\
+    Não é preciso colocar nada, o programa faz automaticamente.\
+    Podemos simplismente omitir:`Shift:=xlUp` | `Shift:=xlToLeft`\
 
 \newpage
 
