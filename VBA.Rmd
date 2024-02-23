@@ -7,16 +7,16 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  odt_document:
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: no
   word_document:
     toc: yes
-    number_sections: yes
-  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -348,7 +348,7 @@ Determina o valor do zoom da janela do Excel.\
 
 ### Referência Absoluta
 
-- A forma tradicional com a opção "Usar referência relativa" desativada, é chamado de referência absoluta, onde a Macro apenas repete os comandos nas células|colunas|linhas selecionadas previamente estabelecidas.\
+- A forma tradicional com a opção "Usar referência relativa" desativada, é chamado de referência absoluta, onde a Macro apenas repete os comandos nas células | colunas | linhas selecionadas, previamente estabelecidas.\
 - Ex.: Se você gravar na célula A1 uma Macro que move o cursor para A3, com a opção "Usar referência relativa" desativada, a execução da Macro resultante na célula J6 moverá o cursor para A3.\
 
 ### Usando referências relativa e absoluta
@@ -472,3 +472,26 @@ Sub Apagar_Linha_Relatimente()
     Rows("10:10").Delete
 End Sub
 ```
+
+\newpage
+
+## Meu primeiro programa VBA
+
+### Caixa de Diálogo
+
+- No VBA, para exibir uma caixa de diálogo usamos a função `MsgBox`.\
+
+![Caixa de diálogo.](Imagens\Macros\Caixa_de_dialogo.png){width=60%}
+
+
+![Programa VBA para criação de caixa de diálogo.](Imagens\Macros\MsgBox_VBA.png){width=60%}
+
+
+- Ex.:\
+  ```
+  Sub nome_Macro()
+    MsgBox "Caixa de diálogo."
+  End Sub
+  ```
+
+\newpage
