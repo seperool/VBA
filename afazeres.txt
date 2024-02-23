@@ -1,11 +1,14 @@
-ESCRITO EM 022/02/24
+ESCRITO EM 023/02/24
 ---
-PARA 23/02/24
+PARA 24/02/24
 ---
 Subir github:
 
 Estudar:
-
+	- Seção 2:
+		- Meu primeiro VBA
+			- 3
+			- 4
 Afazeres:
 	- Seção 2:
-		- Meu primeiro programa em VBA (1, 2, 3 e 4)
+		- Meu primeiro programa em VBA
