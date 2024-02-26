@@ -12,12 +12,12 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  pdf_document:
-    number_sections: yes
-    toc: no
   word_document:
     toc: yes
     number_sections: yes
+  pdf_document:
+    number_sections: yes
+    toc: no
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -472,6 +472,15 @@ Sub Apagar_Linha_Relatimente()
     Rows("10:10").Delete
 End Sub
 ```
+
+\newpage
+
+## Diferença entre Macro Absolta e Macro Relativa - Uso de `Offset`
+
+### Teoria
+### Verificação imediata
+### Depuração
+### `Offset`
 
 \newpage
 
