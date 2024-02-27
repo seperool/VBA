@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  odt_document:
-    number_sections: yes
-  html_document:
-    toc: yes
-    df_print: paged
-  word_document:
-    toc: yes
-    number_sections: yes
   pdf_document:
     number_sections: yes
     toc: no
+  html_document:
+    toc: yes
+    df_print: paged
+  odt_document:
+    number_sections: yes
+  word_document:
+    toc: yes
+    number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -477,10 +477,36 @@ End Sub
 
 ## Diferença entre Macro Absolta e Macro Relativa - Uso de `Offset`
 
-### Teoria
+### Diferença entre Macro Absoluta e Relativa
+
+- Quando marcamos, ou desmarcamos, a opção "Usar Referências Relativas", o código VBA da Macro é alterado.\
+- Diferença é o uso do `Offset`, que cria uma relação relativa (referência relativa) no código VBA gerado.\
+- Diferença entre códigos:\
+  - Macro Absoluta:\
+  `Range("A1").Select`\
+  Determina o célula selecionada.\
+  - Macro Relativa:\
+  `ActiveCell.Offset(-4, -3).Range("A1").Select`\
+  A partir da célula selecionada como referência, anda determinadas coordenadas de células.\  
+
 ### Verificação imediata
+
+- Abre uma janela de testes rápidos "verificação imediata" para testar códigos VBA.\
+- Atalho para abrir a tela no editor VBA:\
+`Ctrl + G`\
+- Exemplo de verificação imediata:\
+`ActiveCell.Offset(-4, -3).Select`\
+Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
+
+![Tela de Verificação Imediata.](Imagens\Macros\Verificacao_imediata.png){width=30%}
+
+
+\newpage
+
 ### Depuração
 ### `Offset`
+
+- O comando `Offset` movimenta o cursor da célula ativa, em determinada coordenada.\
 
 \newpage
 
