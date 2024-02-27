@@ -1,18 +1,15 @@
-ESCRITO EM 26/02/24
+ESCRITO EM 27/02/24
 ---
-PARA 27/02/24
+PARA 28/02/24
 ---
 Subir github:
 
 Estudar:
 	- Seção 2:
-		- Meu primeiro VBA
-			- 3
-			- 4
+		- Diferença entre Macro Absoluta e Macro Relativa - uso de Offset
+			- 2
 Afazeres:
 	- Seção 2:
 		- Diferença entre Macro Absoluta e Macro Relativa - uso de Offset
-			- Teoria
-			- Verificação imediata
 			- Depuração
 			- Offset
