@@ -7,14 +7,14 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  odt_document:
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
+  pdf_document:
     number_sections: yes
+    toc: no
   word_document:
     toc: yes
     number_sections: yes
@@ -503,10 +503,24 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 
 \newpage
 
-### Depuração
 ### `Offset`
 
-- O comando `Offset` movimenta o cursor da célula ativa, em determinada coordenada.\
+- O comando `Offset` movimenta o cursor da célula ativa, em determinada coordenada (linha, coluna).\
+`ActiveCell.Offset(-4, -3).Select`\
+- Coordenadas negativas movem o cursor para cima e para esquerda.\
+`ActiveCell.Offset(-4, -3).Select`\
+- Coordenadas positivas movem o cursor para baixo e para direita.\
+`ActiveCell.Offset(1, 2).Select`\
+
+### Depuração
+
+- Para executar uma Macro atraves da janela de VBA, podemos usar o `F5`, ou o botão continuar na barra superior da janele (seta de execução). Basta deixar o cursor dentro do código que deverá ser executado.\
+
+![Executar código VBA.](Imagens\Macros\Executar_codigo_VBA.png){width=30%}
+
+- Caso ocorra algum erro, podemos pedir para depurar o código atrás da linha que ocasionou/desencadeou o erro. A linha do erro é destacada.\
+
+![Depuração de código atrás de linha com erro.](Imagens\Macros\Depurar.png){width=30%}
 
 \newpage
 
@@ -530,3 +544,5 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
   ```
 
 \newpage
+
+# DESENVOLVENDO PRIMEIRA FERRAMENTA (BÁSICO)
