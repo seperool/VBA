@@ -1,15 +1,9 @@
-ESCRITO EM 27/02/24
+ESCRITO EM 28/02/24
 ---
-PARA 28/02/24
+PARA 29/02/24
 ---
 Subir github:
 
 Estudar:
-	- Seção 2:
-		- Diferença entre Macro Absoluta e Macro Relativa - uso de Offset
-			- 2
+	- Seção 3 - Desenvolvendo Primeira Ferramenta (Básico)
 Afazeres:
-	- Seção 2:
-		- Diferença entre Macro Absoluta e Macro Relativa - uso de Offset
-			- Depuração
-			- Offset
