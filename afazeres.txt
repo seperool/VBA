@@ -1,15 +1,20 @@
-ESCRITO EM 29/02/24
+ESCRITO EM 01/03/24
 ---
-PARA 01/03/24
+PARA 02/03/24
 ---
 Subir github:
 
 Estudar:
 	- Seção 3 - Desenvolvendo Primeira Ferramenta (Básico)
-		- 18 a 38
+		- 19 a 38
 		- Sistema de cadastro de clientes
-			- Criando a estrutura de telas
-				- 4
+			- Configurando os campos
+				- 1
+				- 2
 Afazeres:
 	- Desenvolvendo Primeira Ferramenta (Básico)
-		
+		- Apagar linhas de grades, barra de fórmulas e títulos
+			- Apagando linhas de grade
+			- Apagando barra de fórmulas
+			- Apagando títulos
+		- Criar tabela
