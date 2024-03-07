@@ -1,12 +1,12 @@
-ESCRITO EM 01/03/24
+ESCRITO EM 06/03/24
 ---
-PARA 02/03/24
+PARA 07/03/24
 ---
 Subir github:
 
 Estudar:
 	- Seção 3 - Desenvolvendo Primeira Ferramenta (Básico)
-		- 19 a 38
+		- 21 a 38
 		- Sistema de cadastro de clientes
 			- Configurando os campos
 				- 1
@@ -18,3 +18,5 @@ Afazeres:
 			- Apagando barra de fórmulas
 			- Apagando títulos
 		- Criar tabela
+		- Trancar tabela
+		- Atribuir Macro num botão
