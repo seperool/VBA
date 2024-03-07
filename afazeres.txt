@@ -1,6 +1,6 @@
-ESCRITO EM 06/03/24
+ESCRITO EM 07/03/24
 ---
-PARA 07/03/24
+PARA 08/03/24
 ---
 Subir github:
 
@@ -18,5 +18,4 @@ Afazeres:
 			- Apagando barra de fórmulas
 			- Apagando títulos
 		- Criar tabela
-		- Trancar tabela
-		- Atribuir Macro num botão
+		- Atribuir Macro a um botão
