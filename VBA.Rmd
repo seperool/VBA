@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  word_document:
+    toc: yes
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
   odt_document:
     number_sections: yes
-  word_document:
-    toc: yes
+  pdf_document:
     number_sections: yes
+    toc: no
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -556,6 +556,44 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 
 ### Criar tabela
 
-### Trancar tabela
+\newpage
+
+### Proteger/Bloquear/Trancar tabela
+
+- É possivel para proteger a tabela, ou evitar/restringir que o usuário da planilha edite algum campo não autorizado. Podemos trancar/bloquear a planilha.\
+- Para bloquear ou desbloquear a planilha:\
+  - Bloquear planilha:\
+  `Aba Revisão > Proteger planilha`\
+  - Desbloquear planilha:\
+  `Aba Revisão > Desproteger planilha`\
+- Trancar a planilha limita o usuário a ações predeterminadas:\
+  - Selecionar células bloqueadas\
+  - Selecionar células desbloqueadas\
+  - Formatar células\
+  - Formatar Colunas\
+  - Formatar linhas\
+  - Inserir colunas\
+  - Inserir linhas\
+  - Inserir hiperlinks\
+  - Excluir colunas\
+  - Excluir linhas\
+  - Classificar\
+  - Usar filtro automático\
+  - Utilizar tabela dinâmica e gráfico dinâmico\
+  - Editar objetos\
+  - Editar cenários\
+- Para destrancar a planilha é necessário senha.\
+- Útil para criação de formulários.\
+- Podemos deixar apenas determinados campos/células destrancadas para o usuário preencher. Basta selecionar tudo e desselecionar os campos que queremos deixar destrancados/desprotegidos.\
+
+\newpage
+
+![Proteger/bloquear planilha.](Imagens\Macros\Bloquear_planilha.png){width=80%}
+
+
+![Opções para proteção/bloquear planilha.](Imagens\Macros\Opcoes_trancamento_planilha.png){width=35%}
+
+
+\newpage
 
 ### Atribuir Macro num botão
