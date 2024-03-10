@@ -565,6 +565,16 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
     - Barra de fórmulas.\
     - Títulos.\
 
+\newpage
+
+![Exemplo de tabela com linhas de grade, barra de fórmula e títulos.](Imagens\Macros\Com_grid_formulas_titulos.png){width=60%}
+
+
+![Exemplo de tabela sem linhas de grade, barra de fórmula e títulos.](Imagens\Macros\Sem_grid_formulas_titulos.png){width=60%}
+
+
+\newpage
+
 ### Criar tabela
 
 \newpage
