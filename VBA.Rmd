@@ -7,13 +7,13 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  word_document:
-    toc: yes
+  odt_document:
     number_sections: yes
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
+  word_document:
+    toc: yes
     number_sections: yes
   pdf_document:
     number_sections: yes
@@ -550,9 +550,20 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 ## Sistema de cadastro de clientes
 
 ### Apagar linhas de grade, barra de fórmulas e títulos
-#### Apagando linhas de grade
-#### Apagando barra de fórmulas
-#### Apagando títulos
+
+- Podemos para deixar uma aba com aspecto de programa/sistema, remover/omitir informações da tabela.\
+- Entre as partes que podemos omitir temos:\
+  - Linhas de grade.\
+  *Grid* da tabela que demarca as células.\
+  - Barra de fórmulas.\
+  - Títulos.\
+  São as coordenadas do tabela, tanto da parte superior (letras), quanto a parte lateral esquerda (números).\
+- Para apagar/omitir esses aspectos da tabela:\
+  - ir na aba `Exibir > Mostrar`;\
+  - Marcar ou desmarcar as opções:\
+    - Linhas de grade.\
+    - Barra de fórmulas.\
+    - Títulos.\
 
 ### Criar tabela
 
@@ -597,3 +608,24 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 \newpage
 
 ### Atribuir Macro num botão
+
+- Podemos atribuir uma determinada Macro a um botão.\
+- Exemplos de útilidade de atribuição de Macro a um botão:\
+  - Limpar campos;\
+  - Cadastrar informações;\
+  Inserir informações de uma aba cadastral para uma tabela apropriada.\
+  - Direcinar/levar o usuário para outra tabela;\
+- Passos para atribuir Macro num botão:\
+  1. Criar um botão;\
+    - Caminho:\
+    `Inserir > Ilustrações > Formas`\
+    Desenhar botão no formato desejado.\
+    - Na aba `Formatar` podemos alterar as especificações visual do botão.\
+    - Para inserir texto no botão, clicamos dentro do botão com o botão direito do mouse e vamos na opção `Editar texto`.\
+  2. Criar Macro;\
+  Gravar uma Macro com as ações que desejamos que o botão execute.\
+  3. Atribuir Macro no botão.\
+    - Clicar com o botão direito do mouse sobre o botão e ir na opção `Atribuir macro`.\
+    - Selecionamos a Macro existente e confirmamos com `ok`.\
+  
+\newpage
