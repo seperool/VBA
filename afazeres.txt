@@ -1,6 +1,6 @@
-ESCRITO EM 07/03/24
+ESCRITO EM 10/03/24
 ---
-PARA 08/03/24
+PARA 11/03/24
 ---
 Subir github:
 
@@ -13,9 +13,4 @@ Estudar:
 				- 2
 Afazeres:
 	- Desenvolvendo Primeira Ferramenta (Básico)
-		- Apagar linhas de grades, barra de fórmulas e títulos
-			- Apagando linhas de grade
-			- Apagando barra de fórmulas
-			- Apagando títulos
 		- Criar tabela
-		- Atribuir Macro a um botão
