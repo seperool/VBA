@@ -13,10 +13,10 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
-    number_sections: yes
   word_document:
     toc: yes
+    number_sections: yes
+  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -589,7 +589,7 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
   - Definir se tem ou não cabeçalho;\
 
 
-![Exemplo de tabela.](Imagens\Macros\Tabela.png){width=60%}
+![Exemplo de tabela.](Imagens\Macros\Tabela.png){width=80%}
 
 
 \newpage
@@ -653,4 +653,8 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
     - Clicar com o botão direito do mouse sobre o botão e ir na opção `Atribuir macro`.\
     - Selecionamos a Macro existente e confirmamos com `ok`.\
   
+\newpage
+
+### Cadastro com Macro
+
 \newpage
