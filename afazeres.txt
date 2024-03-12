@@ -1,6 +1,6 @@
-ESCRITO EM 10/03/24
+ESCRITO EM 11/03/24
 ---
-PARA 11/03/24
+PARA 12/03/24
 ---
 Subir github:
 
@@ -13,4 +13,3 @@ Estudar:
 				- 2
 Afazeres:
 	- Desenvolvendo Primeira Ferramenta (Básico)
-		- Criar tabela
