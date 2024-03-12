@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  odt_document:
-    number_sections: yes
-  html_document:
-    toc: yes
-    df_print: paged
-  word_document:
-    toc: yes
-    number_sections: yes
   pdf_document:
     number_sections: yes
     toc: no
+  html_document:
+    toc: yes
+    df_print: paged
+  odt_document:
+    number_sections: yes
+  word_document:
+    toc: yes
+    number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -576,6 +576,21 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 \newpage
 
 ### Criar tabela
+
+- A tabela organização e analise dos dados.\
+- A tabela facilita:\
+  - Classificação;\
+  - Filtragem;\
+  - Formatação dos dados.\
+- Para criar uma tabela:\
+  - Basta selecionar os dados;\
+  - Ir em:\
+  `inserir > Tabelas > Tabela`\
+  - Definir se tem ou não cabeçalho;\
+
+
+![Exemplo de tabela.](Imagens\Macros\Tabela.png){width=60%}
+
 
 \newpage
 
