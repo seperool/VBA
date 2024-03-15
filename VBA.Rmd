@@ -7,16 +7,16 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  odt_document:
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: no
   word_document:
     toc: yes
-    number_sections: yes
-  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -655,6 +655,6 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
   
 \newpage
 
-### Cadastro com Macro
+
 
 \newpage
