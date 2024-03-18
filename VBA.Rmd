@@ -13,10 +13,10 @@ output:
   html_document:
     toc: yes
     df_print: paged
+  odt_document:
+    number_sections: yes
   word_document:
     toc: yes
-    number_sections: yes
-  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -657,7 +657,31 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 
 ## Sistema de cadastro de clientes - VBA
 
+- Podemos usar ferramentas mais sofisticadas de VBA e Macros para construir formulários.\
+- Algumas deles são: 
+  - `Inserir controles`\
+  Ferramentas preexistentes no excel para ações com Macros.\
+  - Atraves da programação em `visual basic`\
+  Serve para omitir ações executadas pelas macros.\
+  Isso evita a sensão de bug no sistema.\
+
 ### Inserir Controles
+
+- São ferramentas preexistentes no excel para ações com Macros.\
+Ex.: Botões preparados para receber Macro.\
+
+- Caminho:\
+`Desenvolvedor > Controles > Inserir`\
+
+![Inserir controles.](Imagens\Macros\Inserir_controles.png){width=60%}
+
+
+\newpage
+
+![Ferramentas de controle.](Imagens\Macros\Ferramentas_de_controle.png){width=60%}
+
+
+\newpage
 
 ### Omitir Ações da Macro - função Application.ScreenUpdating
 
