@@ -13,10 +13,10 @@ output:
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
-    number_sections: yes
   word_document:
     toc: yes
+    number_sections: yes
+  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -683,6 +683,29 @@ Ex.: Botões preparados para receber Macro.\
 
 \newpage
 
-### Omitir Ações da Macro - função Application.ScreenUpdating
+### Omitir Ações da Macro - função `Application.ScreenUpdating`
+
+- Podemos omitir as ações executadas pela Macro, evitar que o sistema do excel pisque paracendo que esta bugado.\
+
+- Para omitir as ações usamos a função `Application.ScreenUpdating` dentro da edição VBA da Macro.\
+
+- A função `Application.ScreenUpdating`:\
+  - `Application.ScreenUpdating = False`\
+  Desliga o que for atualizado na tela.\
+  Não mostra as ações executadas.\
+  Podemos colocar ao inicio do código da Macro para omitir as ações da Macro.\
+  - `Application.ScreenUpdating = True`\
+  Religa ou ativa atualização na tela.\
+  Mostra as ações executadas.\
+  Por default o sistema sempre entende como ligado.\
+  Caso desligado, ao final do programa é necessario ligar essa opção, ou seja, é precisamos inserir ao final do código, se no inicio do código a ação foi dado como desligado.\
+  
+![Desliga a atualização de tela na edição da Macro. `Application.ScreenUpdating = False`](Imagens\Macros\ApplicationScreenUpdating_False.png){width=60%}
+
+
+\newpage
+
+![Religa a atualização de tela na edição da Macro. `Application.ScreenUpdating = True`](Imagens\Macros\ApplicationScreenUpdating_True.png){width=60%}
+
 
 \newpage
