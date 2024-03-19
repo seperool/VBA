@@ -6,7 +6,10 @@ Subir github:
 
 Estudar:
 	- Seção 3 - Desenvolvendo Primeira Ferramenta (Básico)
-		- 29 a 38
+		- 32 a 38
 		- Sistema de cadastro de clientes
 Afazeres:
 	- Desenvolvendo Primeira Ferramenta (Básico)
+		- msgBox
+			- Botão
+			- Título
