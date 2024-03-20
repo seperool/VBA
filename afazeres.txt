@@ -1,6 +1,6 @@
-ESCRITO EM 18/03/24
+ESCRITO EM 19/03/24
 ---
-PARA 19/03/24
+PARA 20/03/24
 ---
 Subir github:
 
@@ -10,6 +10,3 @@ Estudar:
 		- Sistema de cadastro de clientes
 Afazeres:
 	- Desenvolvendo Primeira Ferramenta (Básico)
-		- msgBox
-			- Botão
-			- Título
