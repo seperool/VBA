@@ -13,10 +13,10 @@ output:
   html_document:
     toc: yes
     df_print: paged
+  odt_document:
+    number_sections: yes
   word_document:
     toc: yes
-    number_sections: yes
-  odt_document:
     number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
@@ -530,8 +530,18 @@ Move a célula selecionada em determinada coordenada (-4 linha,-3 coluna).\
 
 - No VBA, para exibir uma caixa de diálogo usamos a função `MsgBox`.\
 
+- Outros argumentos que podemos adicionar a caixa de diálogo são:\
+  - Botão OK\
+  Para fechar a caixa de diálogo.\
+  `MsgBox "Mensagem", vbOKOnly`\
+  - Título a caixa de diálogo\
+  Podemos dar um título para a caixa de diálogo.\
+  `MsgBox "Mensagem", vbOKOnly, "Título"`\
+
 ![Caixa de diálogo.](Imagens\Macros\Caixa_de_dialogo.png){width=60%}
 
+
+\newpage
 
 ![Programa VBA para criação de caixa de diálogo.](Imagens\Macros\MsgBox_VBA.png){width=60%}
 
