@@ -1,12 +1,15 @@
-ESCRITO EM 19/03/24
+ESCRITO EM 21/03/24
 ---
-PARA 20/03/24
+PARA 22/03/24
 ---
 Subir github:
 
 Estudar:
 	- Seção 3 - Desenvolvendo Primeira Ferramenta (Básico)
-		- 32 a 38
+		- 34 a 38
 		- Sistema de cadastro de clientes
 Afazeres:
 	- Desenvolvendo Primeira Ferramenta (Básico)
+		- 32 e 33
+			- Cadastrar ultima cliente na ultima linha
+			- Teste de formulários
