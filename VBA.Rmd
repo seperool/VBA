@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  odt_document:
-    number_sections: yes
-  html_document:
-    toc: yes
-    df_print: paged
-  word_document:
-    toc: yes
-    number_sections: yes
   pdf_document:
     number_sections: yes
     toc: no
+  html_document:
+    toc: yes
+    df_print: paged
+  odt_document:
+    number_sections: yes
+  word_document:
+    toc: yes
+    number_sections: yes
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -722,4 +722,19 @@ Ex.: Botões preparados para receber Macro.\
 
 ### Cadastrar última linha de clientes
 
-### Teste de formulários
+### Teste de formulários - Preenchimento coletivo de células
+
+- Para testar formulários podemos preencher vários campos ao mesmo tempo.\
+
+- Passo a passo:\
+  1. Selecionar todos os campos que deseja preencher.\
+  Selecionar celulas com `Ctrl`\
+  2. Pressione `F2` para editar uma das celulas selecionadas.\
+  3. `Ctrl + Enter` para replicar em o valor em todas as celulas selecionadas.\
+
+![Preencher vários campos ao mesmo tempo.](Imagens\Macros\Teste_de_Formularios.png){width=60%}
+
+
+\newpage
+
+### Depurar código VBA da Macro
