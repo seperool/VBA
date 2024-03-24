@@ -7,17 +7,17 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 #lot: true #adiciona lista de tabelas
 #toc-title: SUMÁRIO #nome do sumário
 output:
-  pdf_document:
+  odt_document:
     number_sections: yes
-    toc: no
   html_document:
     toc: yes
     df_print: paged
-  odt_document:
-    number_sections: yes
   word_document:
     toc: yes
     number_sections: yes
+  pdf_document:
+    number_sections: yes
+    toc: no
 bibliography: R_markdown/bibliografia_R.bib
 csl: R_markdown/abnt.csl
 ---
@@ -738,3 +738,8 @@ Ex.: Botões preparados para receber Macro.\
 \newpage
 
 ### Depurar código VBA da Macro
+
+### Movimentar cursor usando última célula como referência - `ActiveCell.Offset(0,0).Select`
+
+### Selecionar diversos campos com VBA
+
