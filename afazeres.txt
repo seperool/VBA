@@ -1,6 +1,6 @@
-ESCRITO EM 23/03/24
+ESCRITO EM 24/03/24
 ---
-PARA 24/03/24
+PARA 25/03/24
 ---
 Subir github:
 
@@ -14,4 +14,3 @@ Afazeres:
 			- Depurar código VBA da Macro
 			- Movimentar cursor usando ultima celula como referência
 				- ActiveCell.Offset(0,0).Select
-			- Selecionar diversos campos com VBA
